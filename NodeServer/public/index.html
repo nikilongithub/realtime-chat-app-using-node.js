@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iChat - Realtime Chat</title>
+   <!-- ✅ Load socket.io from the backend -->
+    <script defer src="/socket.io/socket.io.js"></script>
+<!-- I am here -->
+    <script defer src="/js/client.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <nav>
+        <img class="logo" src="/logo.jpeg" alt="Logo">
+
+    </nav>
+    <div class="container"></div>
+
+    <!-- Typing status -->
+    <p id="typing-status"></p>
+
+    <div>
+        <form action="#" id='send-container'>
+            <input type="text" name="messageInp" id="messageinp" autocomplete="off" placeholder="Type a message...">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
